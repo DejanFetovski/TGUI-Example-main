@@ -1,9 +1,11 @@
-import { Accordion, Section, Subheadline } from '@xelene/tgui'
 import { useState } from 'react'
+import { Accordion, Section, Subheadline } from '@xelene/tgui'
+
 import styles from './AccordionSection.module.css'
 
 export const AccordionSection = () => {
   const [expanded, setExpanded] = useState(false)
+
   return (
     <Section header="Accordion section">
       <Accordion expanded={expanded} onChange={() => setExpanded(!expanded)}>
