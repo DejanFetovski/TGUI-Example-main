@@ -34,7 +34,7 @@ const tabs = [
 export const App = () => {
   const [currentTab, setCurrentTab] = useState(tabs[0].id)
   return (
-    <AppRoot platform="ios" appearance="light">
+    <AppRoot platform="ios">
       <List>
         <CellSection />
         <AccordionSection />
